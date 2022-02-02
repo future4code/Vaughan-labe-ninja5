@@ -8,8 +8,8 @@ class Cabecalho extends React.Component{
             <Header>
                <h2>LabeNinjas</h2>
                <div>
-                <button>Home</button>
-                <button>Carrinho</button>
+                <button onClick={this.props.voltar}>Home</button>
+                <button onClick={this.props.irCarrinho}>Carrinho</button>
                 </div>
             </Header>
             
