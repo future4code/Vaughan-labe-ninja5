@@ -1,15 +1,18 @@
 import React from "react";
-import {Header} from './Styled'
+import {Header, Imagem, Button} from './Styled'
+import logo from "./Img/ninjaIcon.png"
 
 class Cabecalho extends React.Component{
     render () {
         return (
             
             <Header>
-               <h2>LabeNinjas</h2>
+                
+                <Imagem src={logo} alt="logo" />
+               <h2 >LabeNinjas </h2>
                <div>
-                <button onClick={this.props.voltar}>Home</button>
-                <button onClick={this.props.irCarrinho}>Carrinho</button>
+                <Button onClick={this.props.voltar}>Home</Button>
+                <Button onClick={this.props.irCarrinho}>Carrinho</Button>
                 </div>
             </Header>
             
