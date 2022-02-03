@@ -1,7 +1,8 @@
 import React from "react";
 
 import Cabecalho from "../../components/Header/Cabecalho";
-import {ConteudoPrincipal, H3, Button} from './Styled'
+import {ConteudoPrincipal, Button, Imagem, Butao} from './Styled'
+import fotoPrincipal from "./img/ninjaLogo.png"
 class PaginaPrincipal extends React.Component{
     render () {
         return (
@@ -11,9 +12,9 @@ class PaginaPrincipal extends React.Component{
                 irCarrinho={this.props.irCarrinho}
             />
             <ConteudoPrincipal>
-             <h1>LabeNinjas</h1>
-             <H3>O talento certo no momento certo</H3>
-
+             <Imagem src={fotoPrincipal}/>
+             </ConteudoPrincipal>
+            <Butao>
              <Button 
              onClick={this.props.telaQueroSerNinja}
              >Quero Ser um ninja
@@ -23,8 +24,8 @@ class PaginaPrincipal extends React.Component{
              onClick={this.props.telaContrateNinja}
              >Contrate Ninja
              </Button>
+             </Butao>
              
-             </ConteudoPrincipal>
            </div>
             
             
