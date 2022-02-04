@@ -3,6 +3,7 @@ import PaginaPrincipal from "../pages/PaginaPrincipal/PaginaPrincipal";
 import QueroSerNinja from "../pages/PaginaQueroSerNinja/QueroSerNinja";
 import ContrateNinja from "../pages/PaginaContrateNinja/ContrateNinja";
 import Carrinho from "../pages/PaginaCarrinho/Carrinho";
+import DetalheServico from "../pages/PaginaDetalheServico/DetalheServico";
 
 export class AppContainer extends Component {
   state = {
@@ -33,6 +34,7 @@ export class AppContainer extends Component {
           <ContrateNinja
             voltarHome={this.voltarHome}
             irCarrinho={this.irCarrinho}
+            irDetalheServico={this.irDetalheServico}
           />
         );
 
@@ -43,6 +45,13 @@ export class AppContainer extends Component {
           irCarrinho={this.irCarrinho} 
         />
         );
+
+      case "detalhesServico":
+        return(
+          <DetalheServico 
+            voltarParaLista={this.telaContrateNinja}
+          />
+        )
 
       default:
         return (
@@ -72,6 +81,9 @@ export class AppContainer extends Component {
     this.setState({ telaAtual: "carrinho" });
     console.log("alo carrinho");
   };
+  irDetalheServico = () => {
+    this.setState({ telaAtual: "detalhesServico" })
+  }
  
 
   render() {
