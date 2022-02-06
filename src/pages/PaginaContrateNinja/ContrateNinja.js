@@ -61,7 +61,7 @@ class ContrateNinja extends React.Component {
           irCarrinho={this.props.irCarrinho}
         />
         {this.state.telaContrata ? (
-          <div>{listaServicos}</div>
+          <div>{listaServicos}</div>  
         ) : (
           <DetalheServico />
         )}
