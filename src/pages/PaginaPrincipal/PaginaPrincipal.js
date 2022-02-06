@@ -24,7 +24,7 @@ class PaginaPrincipal extends React.Component{
              onClick={this.props.telaContrateNinja}
              >Contrate Ninja
              </Button>
-             </Butao>
+            </Butao>
              
            </div>
             
