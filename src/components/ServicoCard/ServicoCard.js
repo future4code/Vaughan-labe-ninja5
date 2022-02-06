@@ -12,7 +12,7 @@ export default class ServicoCard extends React.Component {
           <p>Preço: {servico.price}</p>
           <p>Prazo: {servico.dueDate}</p>
           <button onClick={this.props.irDetalheServico}>Ver Detalhes</button>
-          <button>Adicionar no Carrinho</button>
+          <button onClick={() =>this.props.addProdutoInCar(servico.id)}>Adicionar no Carrinho</button>
         </div>
       </>
     );
