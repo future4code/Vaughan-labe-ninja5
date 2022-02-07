@@ -1,12 +1,10 @@
-POR FAVOR, EDITE ESSA MENSAGEM INSERINDO AS INFORMAÇÕES DO SEU PROJETO. COMECE APAGANDO ESSA LINHA.
-
-### INSIRA O NOME NOME DO PROJETO AQUI
+### Labe-ninjas
 
 ### O que funciona
-- DESCREVA O QUE FUNCIONA NO SEU PROJETO
+> botões para mudar a página para o carrinho, botão para mudar para página de serviços disponíveis
 
 ### O que não funciona
-- DESCREVA O QUE NÃO FUNCIONA NO SEU PROJETO
+> Não faz integração com a api e não adiciona no carrinho
 
 ### Link Surge 
 > straight-pail.surge.sh
